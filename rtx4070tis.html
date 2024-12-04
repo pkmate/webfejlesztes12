@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pék Máté">
+    <meta name="description" content="Webshop számítástechnikai hardverek">
+    <title>Pkoz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kepek/favicon_1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="galeria_kod/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="galeria_kod/slick-1.8.1/slick/slick-theme.css">
+    <style type="text/css">
+        .slider {
+            width: 80%;
+            min-width: 400px;
+            margin: 100px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 5px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+
+        .slick-active {
+            opacity: .5;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pkoz</h1><img src="kepek/favicon.png" alt="logo">
+    </header>
+    <div id="menu">
+        <div id="hamburger">
+            <span></span><!--Három ikon-->
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="video.html">Videókártya</a></li>
+                <li><a href="processzor.html">Processzor</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <article class="gpu">
+        <section class="center slider">
+            <div><img src="galeria_kod/kepek/RTX4070TIS.png" alt="RTX 4070 TI Spuer, szemből dobozzal" title="doboz">
+            </div>
+            <div><img src="galeria_kod/kepek/2-1584964.png" alt="RTX 4070 TI Spuer szemből" title="szembol"></div>
+            <div><img src="galeria_kod/kepek/3-1584965.png" alt="RTX 4070 TI Spuer sréhen felülről" title="sréhen">
+            </div>
+            <div><img src="galeria_kod/kepek/4-1584966.png" alt="RTX 4070 TI Spuer oldalról" title="oldalról"></div>
+            <div><img src="galeria_kod/kepek/5-1584967.png" alt="RTX 4070 TI Spuer alulról" title="alulról"></div>
+            <div><img src="galeria_kod/kepek/6-1584968.png" alt="RTX 4070 TI Spuer hátulról" title="hátulról"></div>
+        </section>
+        <section class="leiras">
+            <div class="nev_ar">
+                <h1>RTX 4070 TI Super</h1>
+                <h1>431 390Ft</h1>
+            </div>
+
+            <div class="bemutato">
+                <p>Az NVIDIA GeForce RTX 4070 Ti SUPER a legújabb generációs grafikus kártyák élvonalát képviseli, amely
+                    lenyűgöző teljesítményt és elképesztő vizuális élményt nyújt minden gamer és kreatív szakember
+                    számára. Ez a kártya az NVIDIA Ada Lovelace architektúrájának előnyeit használja ki, hogy a játékok
+                    és a professzionális alkalmazások új szintre emelkedjenek.</p>
+                <h5>Miért válaszd az RTX 4070 Ti SUPER-t?</h5>
+                <ul>
+                    <li>Páratlan Teljesítmény: A 7680 CUDA mag és a 12 GB GDDR6X memória révén a kártya bármilyen modern
+                        játékot vagy alkalmazást maximális beállításokkal futtat, kompromisszumok nélkül.</li>
+                    <li>Sugárkövetés (Ray Tracing): Az NVIDIA RTX technológia valósághű fényeket, árnyékokat és
+                        tükröződéseket kínál, így teljes mértékben elmerülhetsz a játékvilágban.</li>
+                    <li>DLSS 3 Támogatás: Az NVIDIA Deep Learning Super Sampling (DLSS) 3 mesterséges intelligencia
+                        által gyorsított rendereléssel emeli a képkockasebességet, miközben kristálytiszta vizuális
+                        minőséget nyújt.</li>
+                    <li>Alkalmazásokhoz Optimizálva: Ideális választás tartalomkészítők számára, akik 3D modellezéssel,
+                        videóvágással vagy más kreatív munkával foglalkoznak. Az NVIDIA Studio optimalizált driverekkel
+                        garantálja a stabilitást és a teljesítményt.</li>
+                </ul>
+                <p>specifikáció:</p>
+                <ul>
+                    <li>grafikus processzor típusa: GeForce RTX 4070 Ti SUPER</li>
+                    <li>gpu órajele: 2670 MHz</li>
+                    <li>memoria mérete: 16 GB</li>
+                </ul>
+            </div>
+        </section>
+    </article>
+    <footer class="szet" >
+        <p>Email: <a href="mailto:pkoz@gmail.com">pkoz@gmail.com</a></p>
+        <p>Telefon: <a href="tel:+36305349844">+36 30 534 9844</a></p>
+        <p><a href="https://chat.openai.com/">Segítségre van szükséged?</a></p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="galeria_kod/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerPadding: '60px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            arrows: false,
+                            centerPadding: '60px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>
