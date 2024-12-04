@@ -1,0 +1,23 @@
+Oldal készítője: Pék Máté
+
+
+Egy webshopot csináltam, ahol processzorokat, és videókártyákat lehet vásárolni
+
+script 1:
+Ez csak annyit tesz, hogy ha rákattintunk a hamburger ikonra, akkor aktíválodik a menü, ha aktív akkor meg eltünteti
+
+script 2:
+Ezt chat gpt-vel írtam, de át írtam itt-ott és értem is. A lényge, hogy a termékeket leszűri
+
+script 3:
+Ez pedig a termékek árát adja össze
+
+2script:
+Ezt még az elején beraktam, és annyit szenvedtem vele, hogy hozzánőtt a szívemhez. Nem tudtam elengedni:D
+A script első része azért felel, hogy leellenőrizze a bankártya számot, hogy helyes-e a formátum.
+A script második része pedig a jquery valiádlásért felel
+
+Betűtípus: Roboto-t használtam és mindenhol
+
+
+A google maps-ot lényegében csak kimásoltam a beágyazási kódját, és néhány dolgot változtattam

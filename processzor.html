@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pék Máté">
+    <meta name="description" content="Webshop számítástechnikai hardverek">
+    <title>Pkoz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kepek/favicon_1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="ufejlec">
+        <div class="klogo"><h1>Pkoz</h1><img src="kepek/favicon.png" alt="logo"></div>
+        <div class="kosar"> <a href="kosar.html" class="link"><img src="kepek/kosar.png" alt="kosar"></a> <form name="pro" action="#">
+            <input id="osszeg" size="5" value="" type="text">
+        </form>
+    </div>
+    </header>
+
+    <div id="menu">
+        <div id="hamburger">
+            <span></span><!--Három ikon-->
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="video.html">Videókártya</a></li>
+                <li><a href="#" class="aktiv">Processzor</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <article class="piac">
+        <div id="filter">
+            <h3>Szűrő</h3>
+            <form id="filter_form">
+                <label for="gyarto">Gyártó:</label>
+                <select id="gyarto">
+                    <option value="mind">Mind</option>
+                    <option value="amd">AMD</option>
+                    <option value="intel">Intel</option>
+                </select>
+                <label for="ar">Ár max:</label>
+                <input type="number" id="ar" placeholder="HUF">
+                <button type="button" id="filter_alkalmaz">Alkalmaz</button>
+            </form>
+        </div>
+        <!--Termékek!-->
+        <div id="termekek">
+            <div class="termek" data-gyar="amd" data-ar="123990">
+                <img src="video/ryzen.png" alt="Ryzen proci">
+                <div class="spec">
+                <h2>AMD Ryzen 7 7700X</h2>
+                <h4>123 990Ft</h4>
+                <p>specifikáció</p>
+                <ul>
+                    <li>CPU órajele: 4.5 GHz</li>
+                    <li>CPU turbó órajele: 5.4 GHz</li>
+                    <li>Processzormagok száma: 8</li>
+                </ul>
+            <form name="pro" action="#">
+                <table><tr>
+                    <td><button type="button" class="osszead" value="431390">+</button></td>
+                    <td><button type="button" class="kivon" value="431390">-</button></td>
+                </tr></table>
+            </form>
+            </div>
+        </div>
+            <div class="termek" data-gyar="intel" data-ar="109990">
+                <img src="video/i5.png" alt="Intel core i5">
+                <div class="spec">
+                <h2>Intel Core i5-14600K</h2>
+                <h4>109 990Ft</h4>
+                <p>specifikáció</p>
+                <ul>
+                    <li>CPU órajele: 3.5 GHz</li>
+                    <li>CPU turbó órajele: 5.3 GHz</li>
+                    <li>Processzormagok száma: 14</li>
+                </ul>
+                <form name="pro" action="#">
+
+                <table><tr>
+                    <td><button type="button" class="osszead" value="296090">+</button></td>
+                    <td><button type="button" class="kivon" value="296090">-</button></td>
+                </tr></table>
+            </form>
+        </div>
+            </div>
+            <div class="termek" data-gyar="intel" data-ar="48700">
+                <img src="video/i3.png" alt="Intel i3">
+                <div class="spec">
+                <h2>Intel Core i3-12100</h2>
+                <h4>48 700Ft</h4>
+                <p>specifikáció</p>
+                <ul>
+                    <li>CPU órajele: 3.3 GHz</li>
+                    <li>CPU turbó órajele: 4.3 GHz</li>
+                    <li>Processzormagok száma: 4</li>
+                </ul>
+                <form name="pro" action="#">
+                <table><tr>
+                    <td><button type="button" class="osszead" value="137430">+</button></td>
+                    <td><button type="button" class="kivon" value="137430">-</button></td>
+                </tr></table>
+            </form>
+        </div>
+            </div>
+ 
+        </div>
+
+
+
+
+
+    </article>
+
+    <footer class="szet">
+        <p>Email: <a href="mailto:pkoz@gmail.com">pkoz@gmail.com</a></p>
+        <p>Telefon: <a href="tel:+36305349844">+36 30 534 9844</a></p>
+        <p><a href="https://chat.openai.com/">Segítségre van szükséged?</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

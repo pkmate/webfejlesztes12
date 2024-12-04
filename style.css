@@ -1,0 +1,426 @@
+* {
+    box-sizing: border-box;/* ezt azért, hogy minden bele tartozzon a méretbe (pedding, margin)*/
+}
+
+
+body {
+    font-family: "Roboto", "Helvetica", "sans-serif";
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a {/*minden linkre*/
+    text-decoration: none;
+    color: black;
+}
+/*fejléc*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    background-color: rgb(60, 185, 185);
+    color: white;
+}
+
+header img {
+    max-width: 100%;
+    height: 100%;
+}
+/*kosár head*/
+.ufejlec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.klogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+
+    margin-right: 0px;
+}
+.klogo img{
+    width: 70px;
+    height: auto;
+}
+.kosar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+}
+
+.kosar img{
+    width: 50px;
+    height: 50px;
+}
+#osszeg {
+    margin-right: 10%;
+}
+
+/*hamburger menü*/
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+#hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+nav {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+nav ul li:hover{
+    transform: scale(1.2);
+}
+
+nav.megjelen {/* hogy csak aktív állapotban jelenjen meg*/
+    display: block;
+    background-color: #444;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+}
+
+
+.aktiv{
+color: rgb(255, 123, 0);
+}
+
+
+
+
+/*lábléc*/
+footer {
+    background-color: rgb(60, 185, 185);
+    padding: 15px 0;
+    text-align: center;
+    border-top: 2px solid #f0e691;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+footer a{
+    color: white;
+}
+
+/*kezdőlap*/
+
+.kezdo{
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("kepek/nagy_logo.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.kezdot{
+    margin: 0 2%;
+}
+
+/* termékek*/
+
+.link{
+    display: block; /*hogy az egész rtx 4070 link legyen*/
+}
+
+.piac{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#filter{
+    text-align: center;
+    border-top: 3px solid rgb(255, 123, 0);
+    padding-bottom: 2%;
+}
+
+.termek{
+    border-top: 3px solid rgb(255, 123, 0);
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.termek img{
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.termek ul{
+    list-style: none;
+    padding: 3px;
+}
+button.osszead, button.kivon{
+    color: #fff;
+    background-color: rgb(60, 185, 185) ;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+table tr td{
+    padding: 20px;
+    margin: 20px;
+}
+
+
+
+/* térkép*/
+
+.terkep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hely{
+    text-align: left;
+}
+
+.map{
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    overflow: hidden; /* ha túllóg rajta akkor nem jelenití meg*/
+    aspect-ratio: 4 / 3; /* méret arány, enélkül nem is működik*/
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Fizetés lap*/
+
+article.form{
+    margin: 5%;
+}
+
+#telo{
+    margin-bottom: 3%;
+}
+
+label.error{
+    color: red;
+    margin-left: 3%;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+.form input{
+    background-color: rgb(60, 185, 185) ;
+    color: #fff;
+    border-radius: 15px;
+    padding: 8px;
+}
+#bankszam::placeholder{
+    color: rgb(70, 70, 70);
+}
+#datum::placeholder{
+    color: rgb(70, 70, 70);
+}
+#cim::placeholder{
+    color: rgb(70, 70, 70);
+}
+/*rtx4070*/
+.leiras{
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-direction: column;
+}
+.bemutato li{
+    list-style: none;
+}
+.bemutato li:nth-child(2n-1){
+    background-color: rgb(60, 185, 185);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#filter_form select,input{
+background-color: rgb(255, 123, 0);
+padding: 3px;
+border-radius: 5px;
+}
+
+#filter_form button{
+    background-color: rgb(60, 185, 185);
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+
+@media only screen and (min-width: 600px){
+    /*hamburger menü felülre*/
+    header{
+        justify-content: center;
+    }
+    #hamburger {
+      display: none; 
+    }
+  
+    nav {
+      display: flex; /* vízszintes menü */
+      justify-content: center;
+      width: 100%;
+
+    }
+  
+    nav ul {
+      display: flex;
+    }
+  
+    nav ul li {
+      margin: 0 15px;
+      
+    }
+/*video htmlnél a temékeknél a képek a szöveg mellett legyenek*/
+.termek{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 100px;
+    
+}
+.termek img{
+    flex-basis: 10%;
+    max-width: 300px;
+
+    height: auto;
+}
+.termek.spec{
+    flex-basis: 90%;
+
+}
+#filter_form button{
+    margin-top: 20px;
+}
+ /*kezőlap:*/
+.kezdo {
+    padding-right: 150px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("kepek/nagy_logo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*lábléc egymás mellett*/
+.szet{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+/*rtx4070*/
+.nev_ar{
+    margin-left: 12%;
+    transform: scale(1.2);
+}
+
+
+
+
+
+  }
+
+ 
+
+
+
+
+
+  @media only screen and (min-width: 768px){
+    .piac{
+        flex-direction: row;
+    }
+#filter{
+    margin-left: 20px;
+    margin-right: 50px;
+    flex-basis: 10%;
+}
+
+    #filter_form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+  }
+  
+  .kezdo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.kezdot p,ul,li{
+    margin-bottom: 20px;
+}
+
+
+}

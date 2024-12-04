@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pék Máté">
+    <meta name="description" content="Webshop számítástechnikai hardverek">
+    <title>Pkoz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kepek/favicon_1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Pkoz</h1><img src="kepek/favicon.png" alt="logo">
+    </header>
+    <div id="menu">
+        <div id="hamburger">
+            <span></span><!--Három ikon-->
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="video.html">Videókártya</a></li>
+                <li><a href="processzor.html">Processzor</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </div>
+    <article class="form">
+        
+            <form method="post" action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" id="bank_form" novalidate>
+                <div class="kartya">
+                <h4>Bankártya adatok:</h4>
+                <label for="bankszam">
+                    <p>Kártya szám:</p>
+                </label>
+                <input type="text" name="bankszam" id="bankszam" size="16" placeholder="1234-5678-9123-4567">
+                <label for="cvc">
+                    <p>Cvc kód:</p>
+                </label>
+                <input type="text" name="cvc" id="cvc" size="3">
+                <label for="datum">
+                    <p>Lejárati dátum:</p>
+                </label>
+                <input type="text" name="datum" id="datum" size="3" placeholder="12/24">
+                <label for="kartya_nev">
+                    <p>Kártyán szereplő név:</p>
+                </label>
+                <input type="text" name="kartya_nev" id="kartya_nev" size="25">
+            </div>
+            <div class="szallitas">
+            <h4>Szállítási adatok:</h4>
+            <label for="sz_nev">
+                <p>Szállítási cím név</p>
+            </label>
+            <input type="text" name="sz_nev" id="sz_nev" size="25">
+            <label for="cim">
+                <p>Szállítási cím</p>
+            </label>
+            <input type="text" name="cim" id="cim" size="25" placeholder="1054 Budapest, Jani u 42, e/a">
+            <label for="mail">
+                <p>E-mail címed</p>
+            </label>
+            <input type="email" name="mail" id="mail" size="25">
+            <label for="telo">
+                <p>Telefonszámod:</p>
+            </label>
+            <input type="tel" name="telo" id="telo" size="10" value="06-">
+            <br>
+            <button type="button" id="gomb">Fizetés</button>
+        </div>
+        </form>
+
+
+
+    </article>
+    <footer class="szet">
+        <p>Email: <a href="mailto:pkoz@gmail.com">pkoz@gmail.com</a></p>
+        <p>Telefon: <a href="tel:+36305349844">+36 30 534 9844</a></p>
+        <p><a href="https://chat.openai.com/">Segítségre van szükséged?</a></p>
+    </footer>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+    <script src="2script.js"></script>
+</body>
+
+</html>

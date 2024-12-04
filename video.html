@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pék Máté">
+    <meta name="description" content="Webshop számítástechnikai hardverek">
+    <title>Pkoz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="kepek/favicon_1.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="ufejlec">
+        <div class="klogo"><h1>Pkoz</h1><img src="kepek/favicon.png" alt="logo"></div>
+        <div class="kosar"> <a href="kosar.html" class="link"><img src="kepek/kosar.png" alt="kosar"></a> <form name="pro" action="#">
+            <input id="osszeg" size="5" value="" type="text">
+        </form>
+    </div>
+    </header>
+
+    <div id="menu">
+        <div id="hamburger">
+            <span></span><!--Három ikon-->
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="#" class="aktiv">Videókártya</a></li>
+                <li><a href="processzor.html">Processzor</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <article class="piac">
+        <div id="filter">
+            <h3>Szűrő</h3>
+            <form id="filter_form">
+                <label for="gyarto">Gyártó:</label>
+                <select id="gyarto">
+                    <option value="mind">Mind</option>
+                    <option value="amd">AMD</option>
+                    <option value="nvidia">Nvidia</option>
+                </select>
+                <label for="ar">Ár max:</label>
+                <input type="number" id="ar" placeholder="HUF">
+                <button type="button" id="filter_alkalmaz">Alkalmaz</button>
+            </form>
+        </div>
+        <!--Termékek!-->
+        <div id="termekek">
+<a href="rtx4070tis.html" class="link">
+            <div class="termek" data-gyar="nvidia" data-ar="431390">
+                <img src="video/RTX4070TIS.png" alt="RTX 4070 Ti SUPER">
+                <div class="spec">
+                <h2>ASUS GeForce RTX 4070 Ti SUPER 16GB</h2>
+                <h4>431 390Ft</h4>
+                <p>specifikáció</p>
+                <ul>
+                    <li>grafikus processzor típusa: GeForce RTX 4070 Ti SUPER</li>
+                    <li>gpu órajele: 2670 MHz</li>
+                    <li>memoria mérete: 16 GB</li>
+                </ul>
+            </a>
+            <form name="pro" action="#">
+                <table><tr>
+                    <td><button type="button" class="osszead" value="431390">+</button></td>
+                    <td><button type="button" class="kivon" value="431390">-</button></td>
+                </tr></table>
+            </form>
+            </div>
+        </div>
+            <div class="termek" data-gyar="nvidia" data-ar="296090">
+                <img src="video/RTX4070S.png" alt="RTX 4070 Super">
+                <div class="spec">
+                <h2>ASUS GeForce RTX 4070 SUPER 12GB</h2>
+                <h4>296 090Ft</h4>
+                <p>specifikáció</p>
+                <ul>
+                    <li>grafikus processzor típusa: GeForce RTX 4070 SUPER</li>
+                    <li>gpu órajele: 2550 MHz</li>
+                    <li>memoria mérete: 12GB</li>
+                </ul>
+                <form name="pro" action="#">
+
+                <table><tr>
+                    <td><button type="button" class="osszead" value="296090">+</button></td>
+                    <td><button type="button" class="kivon" value="296090">-</button></td>
+                </tr></table>
+            </form>
+        </div>
+            </div>
+            <div class="termek" data-gyar="nvidia" data-ar="137430">
+                <img src="video/RTX4060.png" alt="RTX 4060">
+                <div class="spec">
+                <h2>ASUS GeForce RTX 4060 8GB</h2>
+                <h4>137 430Ft</h4>
+                <p>specifikáció</p>
+                <ul>
+                    <li>grafikus processzor típusa: GeForce RTX 4060 8GB</li>
+                    <li>gpu órajele: 2535 MHz</li>
+                    <li>memoria mérete: 8GB</li>
+                </ul>
+                <form name="pro" action="#">
+                <table><tr>
+                    <td><button type="button" class="osszead" value="137430">+</button></td>
+                    <td><button type="button" class="kivon" value="137430">-</button></td>
+                </tr></table>
+            </form>
+        </div>
+            </div>
+            <div class="termek" data-gyar="amd" data-ar="320500">
+                <img src="video/RX7900XT.png" alt="RX 7900XT">
+                <div class="spec">
+                <h2>Gigabyte Radeon RX 7900 XT 20GB</h2>
+                <h4>320 500Ft</h4>
+                <p>specifikáció</p>
+                <ul>
+                    <li>grafikus processzor típusa: AMD Radeon RX 7900 XT</li>
+                    <li>gpu órajele: 2535 MHz</li>
+                    <li>memoria mérete: 20GB</li>
+                </ul>
+                <form name="pro" action="#">
+                <table><tr>
+                    <td><button type="button" class="osszead" value="320500">+</button></td>
+                    <td><button type="button" class="kivon" value="320500">-</button></td>
+                </tr></table>
+            
+            </form>
+        </div>
+            </div>
+            <div class="termek" data-gyar="amd" data-ar="120300">
+                <img src="video/RX7600.png" alt="RX 7600">
+                <div class="spec">
+                <h2>Gigabyte Radeon RX 7600</h2>
+                <h4>120 300Ft</h4>
+                <p>specifikáció</p>
+                <ul>
+                    <li>grafikus processzor típusa: AMD Radeon RX 7600</li>
+                    <li>gpu órajele: 2755 MHz</li>
+                    <li>memoria mérete: 8GB</li>
+                </ul>
+                <form name="pro" action="#">
+                <table><tr>
+                    <td><button type="button" class="osszead" value="120300">+</button></td>
+                    <td><button type="button" class="kivon" value="120300">-</button></td>
+                </tr></table>
+            </form>
+        </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </article>
+
+    <footer class="szet">
+        <p>Email: <a href="mailto:pkoz@gmail.com">pkoz@gmail.com</a></p>
+        <p>Telefon: <a href="tel:+36305349844">+36 30 534 9844</a></p>
+        <p><a href="https://chat.openai.com/">Segítségre van szükséged?</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
